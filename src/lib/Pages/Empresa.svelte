@@ -7,7 +7,7 @@
 
     import Slider from '../Components/Slider.svelte';
 
-    import empresaImg from '../Images/la-empresa300.jpg'
+    import empresaImg from '../Images/empresa.jpg'
 </script>
 
 <main>

@@ -1,6 +1,6 @@
 <script>
     import { location, replace } from 'svelte-spa-router';
-    import navLogo from '../Images/navlogo.jpg'
+    import navLogo from '../Images/logo-nav.jpg'
     let routes = [
         {url: '/#/about', label: 'La empresa'},
         {url: '/#/security', label: 'Seguridad Electronica'},

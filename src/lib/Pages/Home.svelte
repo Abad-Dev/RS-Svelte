@@ -1,8 +1,8 @@
 <script>
-    import image1 from '../Images/banner-inicio-camaras-1.jpg';
-    import image2 from '../Images/banner-inicio-cercos-1.jpg';
-    import image3 from '../Images/banner-inicio-incendio-1.jpg';
-    import image4 from '../Images/banner-inicio-monitoreo-1.jpg';
+    import image1 from '../Images/home-slider1.jpg';
+    import image2 from '../Images/home-slider2.jpg';
+    import image3 from '../Images/home-slider3.jpg';
+    import image4 from '../Images/home-slider4.jpg';
     let images = [image2, image3, image4]
 
     import Slider from '../Components/Slider.svelte';

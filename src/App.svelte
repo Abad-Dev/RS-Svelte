@@ -31,7 +31,7 @@
     --dark-color: #333333;
   }
   :global(body){
-    background: url('./lib/Images/fondo1-1.jpg');
+    background: url('./lib/Images/background.jpg');
     border-top: 20px solid var(--dark-color);
   }
   :global(img){
