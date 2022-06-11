@@ -10,7 +10,7 @@
             <div class="row py-2 d-none d-lg-flex">
                 <div class="col">
                     <a href="/#/">
-                        <img src={Logo} alt="">
+                        <img src={Logo} alt="" class="logo">
                     </a>
                 </div>
                 <div class="col d-flex">
@@ -29,6 +29,9 @@
 </header>
 
 <style>
+    .logo{
+        max-height: 80px;
+    }
     .header-container{
         background-color: var(--header-color);
     }
