@@ -1,5 +1,5 @@
 <script>
-    import bottomLogo from '../Images/logo-bottom-png.png'
+    import bottomLogo from '../Images/logo-bottom.png'
 </script>
 
 <div class="container pt-3 pb-1 text-light">
