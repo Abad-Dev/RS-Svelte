@@ -22,7 +22,7 @@
 
 <nav class="navbar navbar-expand-lg nav-container navbar-light" bind:this={navBar}>
     <div class="container-fluid">
-        <img src={navLogo} alt="" style="cursor: pointer;" class="d-flex d-lg-none" on:click={() => {replace('/'); hideNavBar()}}>
+        <img src={navLogo} alt="" style="cursor: pointer;" class="d-flex d-lg-none logo" on:click={() => {replace('/'); hideNavBar()}}>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,6 +45,9 @@
   </nav>
 
 <style>
+    .logo{
+        max-height: 80px;
+    }
     .nav-link{
         font-size: 14px;
         color: #000 !important;
