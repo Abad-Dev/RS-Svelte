@@ -1,7 +1,9 @@
 <script>
   import Router from 'svelte-spa-router';
+  
   import Home from './lib/Pages/Home.svelte';
   import Empresa from './lib/Pages/Empresa.svelte';
+  import Seguridad from './lib/Pages/Seguridad.svelte';
 
   import Header from './lib/Components/Header.svelte';
   import NavBar from './lib/Components/NavBar.svelte';
@@ -15,6 +17,7 @@
   <Router routes={{
     '/': Home,
     '/about': Empresa,
+    '/security': Seguridad
   }}
   />  
 
@@ -48,6 +51,6 @@
     flex-direction: column;
   }
   :global(*){
-    font-family: 'Asap', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
   }
 </style>

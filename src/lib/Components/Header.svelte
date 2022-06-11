@@ -1,6 +1,6 @@
 <script>
-    import Logo from '../Images/logo2021.jpg';
-    import Placa from '../Images/placa-107.jpg'
+    import Logo from '../Images/logo.jpg';
+    import Placa from '../Images/placa.jpg'
 </script>
 
 

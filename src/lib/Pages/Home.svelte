@@ -7,9 +7,33 @@
 
     import Slider from '../Components/Slider.svelte';
 
-    import alarmas from '../Images/alarmas1.jpg'
-    import camaras from '../Images/camaras1.jpg'
-    import monitoreo from '../Images/monitoreo1.jpg'
+    import home1 from '../Images/home1.jpg'
+    import home2 from '../Images/home2.jpg'
+    import home3 from '../Images/home3.jpg'
+
+    let infos = [
+      {
+        title: 'Alarmas',
+        desc: 'Contra robos e incendios',
+        img: home1,
+        text: 'Nuestros Ingenieros diseñarán un plan de seguridad orientado a proteger, de manera estratégica…',
+        readMoreUrl: '/#/security'
+      },
+      {
+        title: 'Camaras',
+        desc: 'Via Internet-WIFI',
+        img: home2,
+        text: 'REAL SECURITY suministra e instala equipos profesionales, discretos y confiables, que transmiten vía internet…',
+        readMoreUrl: '/#/security'
+      },
+      {
+        title: 'Monitoreo 24 Horas',
+        desc: 'Central de alarmas y seguridad',
+        img: home3,
+        text: 'Un comunicador electrónico avisa ante cualquier evento a nuestras oficinas de MONITOREO…',
+        readMoreUrl: '/#/security',
+      }
+    ]
 </script>
 
 <main>
@@ -17,57 +41,25 @@
 
     <div class="container bg-white text-secondary pt-4 pb-3">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
+            {#each infos as info}
+            <div class="col-12 col-md-6 col-lg-4 mt-3 mx-auto">
               <div class="container-fluid">
                 <div class="row">
-                  <h4 class="text-uppercase mb-0">Alarmas</h4>
-                  <p>Contra robos e incendios</p>
+                  <h4 class="text-uppercase mb-0">{info.title}</h4>
+                  <p>{info.desc}</p>
                 </div>
                 <div class="row">
-                  <img class="s-img" src={alarmas} alt="">
+                  <img src={info.img} alt="">
                 </div>
                 <div class="row mt-2">
-                  <p>Nuestros Ingenieros diseñarán un plan de seguridad orientado a proteger, de manera estratégica…</p>
+                  <p>{info.text}</p>
                 </div>
                 <div class="row">
-                    <button class="btn read-more">Leer más...➜</button>
+                    <a href={info.readMoreUrl} class="btn read-more">Leer más...➜</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="container-fluid">
-                <div class="row">
-                  <h4 class="text-uppercase mb-0">Camaras</h4>
-                  <p>Via internet-WIFI</p>
-                </div>
-                <div class="row">
-                  <img class="s-img" src={camaras} alt="">
-                </div>
-                <div class="row mt-2">
-                  <p>REAL SECURITY suministra e instala equipos profesionales, discretos y confiables, que transmiten vía internet…</p>
-                </div>
-                <div class="row">
-                    <button class="btn read-more">Leer más...➜</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 offset-md-3 offset-lg-0 col-lg-4">
-              <div class="container-fluid">
-                <div class="row">
-                  <h4 class="text-uppercase mb-0">Monitoreo 24 horas</h4>
-                  <p>Central de alarmas y Seguridad</p>
-                </div>
-                <div class="row">
-                  <img class="s-img" src={monitoreo} alt="">
-                </div>
-                <div class="row mt-2">
-                  <p>Un comunicador electrónico avisa ante cualquier evento a nuestras oficinas de <b>MONITOREO…</b></p>
-                </div>
-                <div class="row pe-2">
-                    <button class="btn read-more">Leer más...➜</button>
-                </div>
-              </div>
-            </div>
+            {/each}
         </div>
     </div>
 </main>
