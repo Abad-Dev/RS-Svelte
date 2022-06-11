@@ -47,4 +47,7 @@
     display: flex;
     flex-direction: column;
   }
+  :global(*){
+    font-family: 'Asap', sans-serif;
+  }
 </style>
